@@ -1,4 +1,4 @@
-export const actionReducer = (state={}, action) => {
+const actionReducer = (state={}, action) => {
   switch(action) {
     case 'PET':
       return {currentAction: 'pet'};
@@ -8,3 +8,5 @@ export const actionReducer = (state={}, action) => {
       return state;    
   }
 }
+
+export default actionReducer;

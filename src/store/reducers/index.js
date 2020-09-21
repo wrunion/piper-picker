@@ -1,22 +1,8 @@
-//write 3 reducers: one for currentAction (x), one for petCount, and one for IgnoreCount
+import { combineReducers } from 'redux';
+import actionReducer from './actionReducer';
+import moodReducer from './moodReducer';
 
-
-
-// const initialState = {
-//   count: 0
-// };
-
-// export const countReducer= (state = initialState, action) => {
-//   switch(action) {
-//     case 'INCREMENT':
-//       return {
-//         count: state.count + 1
-//       };
-//     case 'DECREMENT':
-//       return {
-//         count: state.count - 1
-//       };
-//     default:
-//       return state;
-//   }
-// }
+export default combineReducers({
+  mood: moodReducer,
+  currentAction: actionReducer 
+});

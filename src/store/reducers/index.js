@@ -1,14 +1,22 @@
-//write 3 reducers: one for currentAction, one for petCount, and one for IgnoreCount
+//write 3 reducers: one for currentAction (x), one for petCount, and one for IgnoreCount
 
-const actionReducer = (state={}, action) => {
-  switch(action) {
-    case 'PET':
-      return {currentAction: 'pet'};
-    case 'IGNORE':
-      return {...state, currentAction: 'ignore'};
-    default: 
-      return state;    
-  }
-}
 
-export default actionReducer;
+
+// const initialState = {
+//   count: 0
+// };
+
+// export const countReducer= (state = initialState, action) => {
+//   switch(action) {
+//     case 'INCREMENT':
+//       return {
+//         count: state.count + 1
+//       };
+//     case 'DECREMENT':
+//       return {
+//         count: state.count - 1
+//       };
+//     default:
+//       return state;
+//   }
+// }

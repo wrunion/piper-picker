@@ -1,4 +1,4 @@
-import { actionReducer, countReducer } from './../reducers/actionReducer';
+import { actionReducer } from './../reducers/actionReducer';
 
 describe('actionReducer', () => {
 

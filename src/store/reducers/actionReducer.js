@@ -3,7 +3,7 @@ export const actionReducer = (state={}, action) => {
     case 'PET':
       return {currentAction: 'pet'};
     case 'IGNORE':
-      return {...state, currentAction: 'ignore'};
+      return {currentAction: 'ignore'};
     default: 
       return state;    
   }
